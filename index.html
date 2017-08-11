@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MELBOURNE HOUSING</title>
+
+
+	<link rel="stylesheet" type="text/css" href="libs/full-page/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+	<ul id="menu">
+		<li data-menuanchor="intro"><a href="#intro">Introduction</a></li>
+		<li data-menuanchor="visualization1"><a href="#visualization1">CBD</a></li>
+		<li data-menuanchor="visualization2"><a href="#visualization2">Prices</a></li>
+		<li data-menuanchor="visualization3"><a href="#visualization3">Housing Options</a></li>
+		<li data-menuanchor="visualization4"><a href="#visualization4">Building Sizes</a></li>
+		<li data-menuanchor="visualization5"><a href="#visualization5">Suburbs</a></li>
+		<li data-menuanchor="aboutus"><a href="#aboutus">About</a></li>
+	</ul>
+
+	<div id="fullpage">
+
+		<div class="section " id="section0">
+			<div>
+				<h1>Housing in Melbourne</h1>
+				<div class="text-editor-wrap" style="opacity: 0">
+					<div class="text-body">
+						<div id="being_typed_intro" class="inner-text">
+							<p>
+								Melbourne is the second most populous city in Australia and it is ranked the world's most liveable city. The housing market in Melbourne is 
+								changing rapidly, before you think of moving to Melbourne, you should see this!
+							</p>
+							<br/>
+							<p>
+								In this webpage I have created visualizations that provide different kinds of information about the housing market in Melbourne. The data for these visualizations were extracted from the dataset melbourne_housing_data, which contains 17.408 randomly sampled and geocoded house sales for the last 6 months in Melbourne.
+							</p>
+							<br/>
+							<p>
+								To see the first visualization scroll down or click on the bouncing arrow below.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-indicator" id="sc_ind"><div class="fa fa-chevron-down"></div></div>
+		</div>
+		<div class="section" id="section1">
+			<section>
+			    <div class="one">
+			    	<iframe style="opacity:0" width="100%" height="520" frameborder="0" src="https://gbengaoti.carto.com/builder/6bf0bce2-7d43-11e7-875b-0ef7f98ade21/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			    </div>
+			    <div class="two">
+			    	<div class="text-editor-wrap vis_wrap_right" style="opacity: 0">
+						<div class="text-body" style="height: 520px;">
+							<div class="inner-text">
+								<h2>Distance from the Central Business District(CBD)
+
+								:</h2>
+								<br/>
+								<p>
+									In this simple visualization the available housing is highlighted on the map relative to their distance from the CBD.
+								<p>
+								<br/>
+								<p>
+									This visualization shows all the houses sold in the last six months, it indicates the distance from the CBD using color, where areas in green are closest to the CBD, areas with red are farthest from the CBD, areas with yellow are in between.
+								</p> 
+								<br/>
+								<p>
+									We can see that more houses were sold in the area close to CBD and the areas in between than the areas far from it. It is safe to conclude that these areas are in demand but more interesting is the fact that there were a lot of available houses in those locations.
+								</p>
+								<br/>
+								<p>
+									Now you're thinking, I can live close to the CBD. Not so fast, Let's look at prices!
+								</p>
+							</div>
+						</div>
+					</div>
+			    </div>
+			</section>
+			<div class="scroll-indicator"><div class="fa fa-chevron-down"></div></div>
+		</div>
+		<div class="section" id="section2">
+			<section>
+			    <div class="one">
+			    	<div class="text-editor-wrap vis_wrap" style="opacity: 0">
+						<div class="text-body" style="height: 520px;">
+							<div class="inner-text">
+								<h2>Filtered Housing Prices:</h2>
+								<br/>
+								<p>
+									This visualization offers more interactivity. It provides filters to limit what is displayed in the graph. The filters allow you to view the prices of houses for a particular distance range. The darker colors represent the more expensive houses and the light colors represent the cheaper houses.
+								</p>
+								<br/>
+								<p>
+									In order to use the filters one can simply click on the bars in the histrogram to show where houses in a particular price range is located or where houses in a particular price range at a particular distance from the CBD are located.
+
+								</p>
+								<br/>
+								<p>
+									Navigating the visualization and looking at general trends, we can see that the distribution of prices is relative to their distance from the CBD. For example, the houses closest to the CBD have a price range from 160k to 6.5M while the houses farthest from the CBD have a price range from  410k to 970k.
+								</p>
+								<br/>
+									It's not all bad news, you can still get cheap housing close to the CBD. But what kind of housing are you looking for?
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class="two">
+			    	<iframe style="opacity:0" width="100%" height="520" frameborder="0" src="https://gbengaoti.carto.com/builder/bf60aeaf-d27b-4ba7-8fd8-6f66515f14c6/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			    </div>
+			</section>
+			<div class="scroll-indicator"><div class="fa fa-chevron-down"></div></div>
+		</div>
+		<div class="section" id="section3">
+			<section>
+			    <div class="one">
+			    	<div class="text-editor-wrap vis_wrap" style="opacity: 0">
+						<div class="text-body" style="height: 520px;">
+							<div class="inner-text">
+								<h2>Filtered Housing Options:</h2>
+								<br/>
+								<p>
+									This visualization provides more detail into the various housing options in Melbourne. The filters allow you to see the housing options available including houses/cottages/villa/terrace, development sites or a town house.
+								</p>
+								<br/>
+								<p>
+									In order to use the filters one can simply click on the bars in the histrogram to show limit the number of rooms are available. For example, selecting the 2 room bar, will show all 2-room apartments that were sold. 
+
+								</p>
+								<br/>
+								<p>
+									Navigating the visualization and looking at general trends, we see that the most common housing option is a house/cottage, also it is easiest to get a 3-room apartment anywhere in Melbourne. 
+								</p>
+								<br/>
+								<p>
+									If you are planning to get an apartment with 2 or 3 rooms, there is a very high probability of getting one!
+								</p>
+								<br/>
+								<p>
+									Let's talk about space, how much space do you need ?
+								</p>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class="two">
+			    	<iframe style="opacity:0" width="100%" height="520" frameborder="0" src="https://gbengaoti.carto.com/builder/e5cccf07-4d41-488f-b4d8-1520682186fb/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			    </div>
+			</section>
+			<div class="scroll-indicator"><div class="fa fa-chevron-down"></div></div>
+		</div>
+		<div class="section" id="section4">
+			<section>
+			    <div class="one">
+			    	<div class="text-editor-wrap vis_wrap" style="opacity: 0">
+						<div class="text-body" style="height: 520px;">
+							<div class="inner-text">
+								<h2>Filtered Housing Areas:</h2>
+								<br/>
+								<p>
+									This visualization provides more detail into the various the housing options by showing the building areas for the different houses. The bigger the circle, the bigger the building area, hovering over the points shows the land size and the area of the buildings.
+								</p>
+								<br/>
+
+								<p>
+									By navigating the visualization, we can see that the houses close to the CBD are much smaller than the houses farther from the CBD.						
+								</p>
+								<br/>
+								<p>
+									If you need a bigger house, you may need to sacrifice living close to the CBD!
+								</p>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class="two">
+			    	<iframe style="opacity:0" width="100%" height="520" frameborder="0" src="https://gbengaoti.carto.com/builder/b3ac8015-51fc-4169-bdbe-fca7142e6c50/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			    </div>
+			</section>
+			<div class="scroll-indicator"><div class="fa fa-chevron-down"></div></div>
+		</div>
+		<div class="section" id="section5">
+			<section>
+			    <div class="one">
+			    	<div class="text-editor-wrap vis_wrap" style="opacity: 0">
+						<div class="text-body" style="height: 520px;">
+							<div class="inner-text">
+								<h2>Filtered Suburb Prices:</h2>
+								<br/>
+								<p>
+									This visualization provides more detail into the various the housing options by showing the different suburbs with respect to the prices of the houses in those suburbs. This visualization allows you select a particular suburb and view the prices; the bigger circles represent the more expensive housing. By hovering over the circle, you can view the price and the name of the suburb. This visualization helps you to study the various suburbs with respect to their prices in detail.
+								</p>
+								<br/>
+
+								<p>
+									By studying the map closely, we see that on the average Reservior is one of the cheapest suburb to live in while Glen Iris is one of the most expensive suburb to live in. 					
+								</p>
+								<br/>
+								<p>
+									You have just seen a number of visualizations based on the distance to the CBD, the prices relative to the distance, the various housing options available, the size of the buildings available and prices of houses in various suburbs.
+								</p>
+								<br/>
+								<p>
+								My hope is that this visualizations have given you some insight into the Melbourne housing market, hopefully enough to make an informed decision on where to live!
+								</p>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class="two">
+			    	<iframe style="opacity:0" width="100%" height="520" frameborder="0" src="https://gbengaoti.carto.com/builder/6c3d6a44-71ec-4651-899b-6b4610a8e65d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			    </div>
+			</section>
+		</div>
+		<div class="section" id="section6">
+			<div class="closing">
+				<p>
+					These visualizations were created by Oti Olugbenga.
+				</p>					
+			</div>
+		</div>
+		
+	</div>
+</body>
+
+<script type="text/javascript" src="libs/jQuery/jquery.js"></script>
+<script type="text/javascript" src="libs/full-page/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
