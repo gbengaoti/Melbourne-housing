@@ -3,7 +3,7 @@ var firsttime = true;
 $(document).ready(function() {
 	$("#menu").hide();
 	$('#fullpage').fullpage({
-		sectionsColor: ['whitesmoke', '#FF847C', '#1bbc9b', '#0B486B','#96300C','#682047','whitesmoke'],
+		sectionsColor: ['whitesmoke', '#FF847C', '#1bbc9b', '#0B486B','#96300C','#682047','#96300C'],
 		anchors: ['intro', 'visualization1', 'visualization2', 'visualization3','visualization4','visualization5','aboutus'],
 		menu: '#menu',
 		onLeave: function(index, nextIndex, direction){
